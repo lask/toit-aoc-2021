@@ -7,7 +7,6 @@ main:
 
   window := lines[0] + lines[1] + lines[2]
   increases := 0
-
   for i := 0; i < lines.size - 3; i++:
     if window < window - lines[i] + lines[i + 3]: increases++
     window -= lines[i]
